@@ -7,12 +7,62 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/finalValue"
+        android:layout_width="239dp"
+        android:layout_height="159dp"
+        android:text="Final Value"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <EditText
+        android:id="@+id/numberOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Enter a Number"
+        android:inputType="numberSigned|number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/numberTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="Enter a Number"
+        android:inputType="numberSigned|number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/finalValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOne" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="onInteract"
+        android:text="calculate"
+        app:layout_constraintBottom_toTopOf="@+id/finalValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberTwo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
