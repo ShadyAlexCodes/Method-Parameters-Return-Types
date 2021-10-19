@@ -23,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
         int secondNumber = Integer.parseInt(etNumberTwo.getText().toString());
 
         TextView finalValue = (TextView) findViewById(R.id.finalValue);
-        finalValue.setText(Integer.toString(firstNumber + secondNumber));
+
+        int add = firstNumber + secondNumber;
+        int subtract = firstNumber - secondNumber;
+        int multiply = firstNumber * secondNumber;
+        int divide = firstNumber / secondNumber;
+
+        finalValue.setText(
+                firstNumber + " + " + secondNumber + " = " + add
+                + "\n" + firstNumber + " - " + secondNumber + " = " + subtract
+                + "\n" + firstNumber + " * " + secondNumber + " = " + multiply
+                + "\n" + firstNumber + " / " + secondNumber + " = " + divide);
     }
 }
